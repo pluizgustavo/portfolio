@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111429">
+  <meta name="description" content="Portfólio de Luiz Gustavo Pereira, estudante de informática.">
+  <title>Luiz Gustavo Pereira — Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="desktop" id="desktop">
+    <div class="wallpaper-glow wallpaper-glow-one"></div>
+    <div class="wallpaper-glow wallpaper-glow-two"></div>
+    <div class="desktop-top">
+      <div class="system-label"><span class="system-mark">✦</span> MEU SISTEMA <span class="system-version">PORTFÓLIO 1.0</span></div>
+      <div class="top-status"><span class="status-dot"></span> Sistema online</div>
+    </div>
+
+    <section class="desktop-icons" aria-label="Aplicativos">
+      <button class="desktop-icon" data-open="about"><span class="icon-tile icon-about">👤</span><span>Sobre mim</span></button>
+      <button class="desktop-icon" data-open="projects"><span class="icon-tile icon-projects">🗂️</span><span>Meus projetos</span></button>
+      <button class="desktop-icon" data-open="skills"><span class="icon-tile icon-skills">⚡</span><span>Habilidades</span></button>
+      <button class="desktop-icon" data-open="resume"><span class="icon-tile icon-resume">📄</span><span>Currículo</span></button>
+      <button class="desktop-icon" data-open="contact"><span class="icon-tile icon-contact">✉️</span><span>Contato</span></button>
+      <button class="desktop-icon" data-open="notes"><span class="icon-tile icon-notes">📝</span><span>Meu bloco</span></button>
+    </section>
+
+    <section class="welcome-card">
+      <div class="welcome-copy">
+        <span class="eyebrow">BEM-VINDO(A) AO MEU ESPAÇO</span>
+        <h1>Olá, sou Luiz<span class="accent">.</span></h1>
+        <p>Sou Luiz Gustavo Pereira, estudante de informática. Explore meu portfólio para me conhecer melhor.</p>
+        <button class="primary-button" data-open="about">Começar a explorar <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="welcome-art" aria-hidden="true">
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="art-core">✦</div><span class="art-spark spark-one">✧</span><span class="art-spark spark-two">✦</span>
+      </div>
+      <div class="welcome-foot"><span><span class="status-dot"></span> Disponível para oportunidades</span><span>✦ &nbsp; Feito com curiosidade</span></div>
+    </section>
+
+    <div class="desktop-hint"><span>⌘</span> Dê dois cliques em um aplicativo para abrir</div>
+
+    <nav class="taskbar" aria-label="Barra de tarefas">
+      <button class="taskbar-launcher" id="launcher" aria-label="Abrir menu de aplicativos" title="Aplicativos">✦</button>
+      <div class="taskbar-divider"></div>
+      <div class="taskbar-apps" id="taskbarApps" aria-label="Aplicativos abertos"></div>
+      <div class="taskbar-tray">
+        <span class="tray-wifi" title="Conectado">◉</span>
+        <span class="tray-volume" title="Áudio">♫</span>
+        <div class="tray-clock"><span id="clock">00:00</span><small id="date">01/01/2026</small></div>
+      </div>
+    </nav>
+
+    <div class="launcher-menu" id="launcherMenu" aria-label="Menu de aplicativos">
+      <div class="launcher-heading"><span class="system-mark">✦</span><div><strong>Meu Sistema</strong><small>Seu espaço, suas histórias.</small></div></div>
+      <div class="launcher-grid">
+        <button data-open="about"><span>👤</span>Sobre mim</button>
+        <button data-open="projects"><span>🗂️</span>Projetos</button>
+        <button data-open="skills"><span>⚡</span>Habilidades</button>
+        <button data-open="resume"><span>📄</span>Currículo</button>
+        <button data-open="contact"><span>✉️</span>Contato</button>
+        <button data-open="notes"><span>📝</span>Meu bloco</button>
+      </div>
+      <div class="launcher-footer">Portfólio pessoal <span>v1.0</span></div>
+    </div>
+    <div class="windows-layer" id="windowsLayer"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
